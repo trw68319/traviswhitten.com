@@ -1,13 +1,5 @@
-.sectionTitle {
-    height: auto;
-    width: 31%;
-    text-align: center;
-    position: relative;
-    top: 40px;
-}
-
-.sectionTitle h1 {
-    font-size: 50px;
+.section-title {
+    margin-left: 
 }
 
 .navbar-nav a {
@@ -17,6 +9,7 @@
 .navbar-nav a:hover {
     color: #045FB4;
 }
+
 /*
 #navBar {
     position: fixed;
@@ -57,7 +50,7 @@ a:visited .navItemText {
     text-decoration: none;
 }
 */
-
+/*
 #home {
     position: relative;
     z-index: 1;
@@ -97,6 +90,7 @@ a:visited .navItemText {
     display: inline-block;
     color: white;
 }
+*/
 
 #projects {
     position: relative;
@@ -211,8 +205,9 @@ a:visited .navItemText {
 #contactDetails h1 {
     padding: 20px;
 }
-*/
+
 footer {
     height: 70px;
     background-color: #909090;
 }
+*/
