@@ -13,8 +13,8 @@ html, body {
 }
 
 .btn-primary {
-    background-color: #2b1494;
-    border-color: #2b1494;
+    background-color: #2138cd;
+    border-color: #2138cd;
 }
 
 .display-1 {
@@ -44,7 +44,7 @@ html, body {
 }
 
 #home {
-    background-color: #85929E;
+    background-color: #8085a7;
     position: relative;
     color: floralwhite;
     top: 32px;
@@ -85,16 +85,16 @@ html, body {
 }
 
 .project-description h2 {
-    color: #2b1494;
+    color: #2138cd;
 
     @include media-breakpoint-down (sm) {
-        font-size: 1.5em;
+        font-size: 1.2em;
     }
 }
 
 .project-description h1 {
     @include media-breakpoint-down(sm) {
-        font-size: 1.7em;
+        font-size: 1.3em;
     }
 }
 
@@ -111,8 +111,12 @@ html, body {
     border-radius: 8px;
     width: 100%;
 
+    @include media-breakpoint-up(md) {
+        height: auto;
+        max-width: 400px;
+    }
+
     @include media-breakpoint-up(lg) {
-        height: 300px;
         max-width: 600px;
     }
 

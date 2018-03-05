@@ -6034,8 +6034,8 @@ html, body {
   overflow-x: hidden; }
 
 .btn-primary {
-  background-color: #2b1494;
-  border-color: #2b1494; }
+  background-color: #2138cd;
+  border-color: #2138cd; }
 
 @media (max-width: 767.98px) {
   .display-1 {
@@ -6056,7 +6056,7 @@ html, body {
     font-size: 2em; } }
 
 #home {
-  background-color: #85929E;
+  background-color: #8085a7;
   position: relative;
   color: floralwhite;
   top: 32px;
@@ -6090,14 +6090,14 @@ html, body {
   top: 32px; }
 
 .project-description h2 {
-  color: #2b1494; }
+  color: #2138cd; }
   @media (max-width: 767.98px) {
     .project-description h2 {
-      font-size: 1.5em; } }
+      font-size: 1.2em; } }
 
 @media (max-width: 767.98px) {
   .project-description h1 {
-    font-size: 1.7em; } }
+    font-size: 1.3em; } }
 
 @media (max-width: 767.98px) {
   .project-description .lead {
@@ -6109,9 +6109,12 @@ html, body {
 .project-thumbnail {
   border-radius: 8px;
   width: 100%; }
+  @media (min-width: 768px) {
+    .project-thumbnail {
+      height: auto;
+      max-width: 400px; } }
   @media (min-width: 992px) {
     .project-thumbnail {
-      height: 300px;
       max-width: 600px; } }
   @media (min-width: 576px) and (max-width: 767.98px) {
     .project-thumbnail {
