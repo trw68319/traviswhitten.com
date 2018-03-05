@@ -6,14 +6,50 @@
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
         
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-        <link rel="stylesheet" href="main.css">
         
         <title>Travis Whitten</title>
+        
+        <style>
+            .navbar {
+                background-color: #353A41;
+                color: floralwhite;
+            }
+            
+            .navbar a {
+                color: #909090;
+            }
+            
+            .navbar a:hover {
+                color: #045FB4;
+            }
+            
+            #home {
+                position: relative;
+                color: floralwhite;
+                top: 32px;
+                height: 600px;
+            }
+            
+            #homeBottom {
+                position: absolute;
+                bottom: 10%;
+            }
+            
+            #rotatingWords {
+                position: absolute;
+                bottom: 50%;
+            }
+            #projects {
+                position: relative;
+                top:32px;
+            }
+            
+        </style>
     </head>
     
     <body>
-        <nav class="navbar fixed-top navbar-expand-lg navbar-inverse" style="background-color: #353A41">
-            <a class="navbar-brand mb-0 h1" style="color: white">Travis Whitten</a>
+        <nav class="navbar navbar-inverse bg-inverse fixed-top navbar-expand-lg">
+            <a class="navbar-brand mb-0 h1">Travis Whitten</a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
             </button>
@@ -25,7 +61,7 @@
                   <a class="nav-item nav-link" href="#contactMe">Contact Me</a>
                 </div>
             </div>
-        </nav>
+        </nav>zz
         <!--
         <div id="navBar">
             <h4>Travis Whitten</h4>
@@ -39,16 +75,16 @@
         <div id="home" class="container-fluid" style="background-color: darkslategray">
             
             <div class="container-fluid sectionTitle">
-                <h1 class="section-title display-4">Home</h1>
+                <h1 class="section-title display-4 p-4">Home</h1>
             </div>
             
-            <div class="row text-center col-sm-12" id="rotatingWords">
+            <div class="text-center col-12" id="rotatingWords">
                 <h1 class="display-1">Hard Working.</h1>
             </div>
             
             <div id="homeBottom" class="container-fluid">
-                <div class="row">
-                    <div class="col-sm-12 col-md-4 text-right">
+                <div class="d-flex flex-row">
+                    <div class="col-sm-12 col-md-4 text-center">
                         <h1>
                             Get to Know Me.
                         </h1>
@@ -58,7 +94,7 @@
                             What I've Done.
                         </h1>
                     </div>
-                    <div class="col-sm-12 col-md-4 text-left">
+                    <div class="col-sm-12 col-md-4 text-center">
                         <h1>
                             What I'm Doing.
                         </h1>
