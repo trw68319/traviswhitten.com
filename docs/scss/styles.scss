@@ -1,0 +1,76 @@
+// Variable Overrides
+
+//Bootstrap Sass Files
+@import "node_modules/bootstrap/scss/bootstrap";
+
+// Responsive design changes
+html, body {
+    width: 100%;
+    height: 100%;
+    margin: 0px; 
+    padding: 0px;
+    overflow-x: hidden;
+}
+.display-1 {
+    @include media-breakpoint-down(sm) {
+        font-size: 4em;
+    }
+}
+
+// Style changes + responsive changes
+.navbar {
+    background-color: #353A41;
+    color: floralwhite;
+}
+
+.navbar a {
+    color: #909090;
+}
+
+.navbar a:hover {
+    color: #045FB4;
+}
+
+.section-title {
+    @include media-breakpoint-down(sm) {
+        font-size: 2em;
+    }
+}
+
+#home {
+    background-color: #85929E;
+    position: relative;
+    color: floralwhite;
+    top: 32px;
+    height: 550px;
+}
+
+#homeBottom {
+    position: absolute;
+    bottom: 10%;
+}
+
+#homeBottom h1 {
+    @include media-breakpoint-down(sm) {
+        font-size: 1.2em;
+    }
+    
+    @include media-breakpoint-only(md) {
+        font-size: 1.8em;
+    }
+
+    @include media-breakpoint-up(lg) {
+        font-size: 2.2em;
+    }
+}
+
+#rotatingWords {
+    position: absolute;
+    bottom: 40%;
+}
+
+#projects {
+    position: relative;
+    top:32px;
+}
+

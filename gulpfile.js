@@ -4,7 +4,7 @@ var sass        = require('gulp-sass');
 
 // Compile sass into CSS & auto-inject into browsers
 gulp.task('sass', function() {
-    return gulp.docs(['node_modules/bootstrap/scss/bootstrap.scss', 'docs/scss/*.scss'])
+    return gulp.src(['node_modules/bootstrap/scss/bootstrap.scss', 'docs/scss/*.scss'])
         .pipe(sass())
         .pipe(gulp.dest("docs/css"))
         .pipe(browserSync.stream());
@@ -12,7 +12,7 @@ gulp.task('sass', function() {
 
 // Move the javascript files into our /docs/js folder
 gulp.task('js', function() {
-    return gulp.docs(['node_modules/bootstrap/dist/js/bootstrap.min.js', 'node_modules/jquery/dist/jquery.min.js', 'node_modules/popper.js/dist/umd/popper.min.js'])
+    return gulp.src(['node_modules/bootstrap/dist/js/bootstrap.min.js', 'node_modules/jquery/dist/jquery.min.js', 'node_modules/popper.js/dist/umd/popper.min.js'])
         .pipe(gulp.dest("docs/js"))
         .pipe(browserSync.stream());
 });
