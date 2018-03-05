@@ -6033,6 +6033,10 @@ html, body {
   padding: 0px;
   overflow-x: hidden; }
 
+.btn-primary {
+  background-color: #2b1494;
+  border-color: #2b1494; }
+
 @media (max-width: 767.98px) {
   .display-1 {
     font-size: 4em; } }
@@ -6045,7 +6049,7 @@ html, body {
   color: #909090; }
 
 .navbar a:hover {
-  color: #045FB4; }
+  color: floralwhite; }
 
 @media (max-width: 767.98px) {
   .section-title {
@@ -6057,6 +6061,9 @@ html, body {
   color: floralwhite;
   top: 32px;
   height: 550px; }
+  @media (min-width: 576px) and (max-width: 767.98px) {
+    #home {
+      height: 300px; } }
 
 #homeBottom {
   position: absolute;
@@ -6081,3 +6088,33 @@ html, body {
 #projects {
   position: relative;
   top: 32px; }
+
+.project-description h2 {
+  color: #2b1494; }
+  @media (max-width: 767.98px) {
+    .project-description h2 {
+      font-size: 1.5em; } }
+
+@media (max-width: 767.98px) {
+  .project-description h1 {
+    font-size: 1.7em; } }
+
+@media (max-width: 767.98px) {
+  .project-description .lead {
+    font-size: 1.2em; } }
+
+.project-description .badge-warning {
+  color: floralwhite; }
+
+.project-thumbnail {
+  border-radius: 8px;
+  width: 100%; }
+  @media (min-width: 992px) {
+    .project-thumbnail {
+      height: 300px;
+      max-width: 600px; } }
+  @media (min-width: 576px) and (max-width: 767.98px) {
+    .project-thumbnail {
+      max-height: 260px;
+      margin: auto;
+      width: auto; } }

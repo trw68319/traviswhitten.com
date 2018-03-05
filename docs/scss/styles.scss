@@ -11,6 +11,12 @@ html, body {
     padding: 0px;
     overflow-x: hidden;
 }
+
+.btn-primary {
+    background-color: #2b1494;
+    border-color: #2b1494;
+}
+
 .display-1 {
     @include media-breakpoint-down(sm) {
         font-size: 4em;
@@ -28,7 +34,7 @@ html, body {
 }
 
 .navbar a:hover {
-    color: #045FB4;
+    color: floralwhite;
 }
 
 .section-title {
@@ -43,6 +49,10 @@ html, body {
     color: floralwhite;
     top: 32px;
     height: 550px;
+
+    @include media-breakpoint-only(sm) {
+        height: 300px;
+    }
 }
 
 #homeBottom {
@@ -74,3 +84,41 @@ html, body {
     top:32px;
 }
 
+.project-description h2 {
+    color: #2b1494;
+
+    @include media-breakpoint-down (sm) {
+        font-size: 1.5em;
+    }
+}
+
+.project-description h1 {
+    @include media-breakpoint-down(sm) {
+        font-size: 1.7em;
+    }
+}
+
+.project-description .lead {
+    @include media-breakpoint-down(sm) {
+        font-size: 1.2em;
+    }
+}
+
+.project-description .badge-warning {
+    color: floralwhite;
+}
+.project-thumbnail {
+    border-radius: 8px;
+    width: 100%;
+
+    @include media-breakpoint-up(lg) {
+        height: 300px;
+        max-width: 600px;
+    }
+
+    @include media-breakpoint-only(sm) {
+        max-height: 260px;
+        margin: auto;
+        width: auto;
+    }
+}
