@@ -3,7 +3,8 @@
 //Bootstrap Sass Files
 @import "node_modules/bootstrap/scss/bootstrap";
 
-// Responsive design changes
+// Built-in class changes
+
 html, body {
     width: 100%;
     height: 100%;
@@ -12,29 +13,34 @@ html, body {
     overflow-x: hidden;
 }
 
-.btn-primary {
-    background-color: #2138cd;
-    border-color: #2138cd;
-}
-
 .display-1 {
     @include media-breakpoint-down(sm) {
         font-size: 4em;
     }
 }
 
-// Style changes + responsive changes
+.btn-primary {
+    background-color: $secondary-blue;
+    border-color: $secondary-blue;
+}
+
+
+// Individual style/ responsive changes
+
+$primary-blue: #2471a3;
+$secondary-blue: #2138cd;
+
 .navbar {
     background-color: #353A41;
     color: floralwhite;
-}
 
-.navbar a {
-    color: #909090;
-}
-
-.navbar a:hover {
-    color: floralwhite;
+    a {
+        color: #909090;
+    }
+    
+    a:hover {
+        color: floralwhite;
+    }
 }
 
 .section-title {
@@ -44,7 +50,7 @@ html, body {
 }
 
 #home {
-    background-color: #8085a7;
+    background-color: $primary-blue;
     position: relative;
     color: floralwhite;
     top: 32px;
@@ -58,19 +64,19 @@ html, body {
 #homeBottom {
     position: absolute;
     bottom: 10%;
-}
-
-#homeBottom h1 {
-    @include media-breakpoint-down(sm) {
-        font-size: 1.2em;
-    }
     
-    @include media-breakpoint-only(md) {
-        font-size: 1.8em;
-    }
+    h1 {
+        @include media-breakpoint-down(sm) {
+            font-size: 1.2em;
+        }
 
-    @include media-breakpoint-up(lg) {
-        font-size: 2.2em;
+        @include media-breakpoint-only(md) {
+            font-size: 1.8em;
+        }
+
+        @include media-breakpoint-up(lg) {
+            font-size: 2.2em;
+        }
     }
 }
 
@@ -84,29 +90,33 @@ html, body {
     top:32px;
 }
 
-.project-description h2 {
-    color: #2138cd;
+.project-description {
+    
+    h2 {
+        color: $secondary-blue;
 
-    @include media-breakpoint-down (sm) {
-        font-size: 1.2em;
+        @include media-breakpoint-down (sm) {
+            font-size: 1.2em;
+        }
+    }
+    
+    h1 {
+        @include media-breakpoint-down(sm) {
+            font-size: 1.3em;
+        }
+    }
+    
+    .lead {
+        @include media-breakpoint-down(sm) {
+            font-size: 1.2em;
+        }
+    }
+    
+    .badge-warning {
+        color: floralwhite;
     }
 }
 
-.project-description h1 {
-    @include media-breakpoint-down(sm) {
-        font-size: 1.3em;
-    }
-}
-
-.project-description .lead {
-    @include media-breakpoint-down(sm) {
-        font-size: 1.2em;
-    }
-}
-
-.project-description .badge-warning {
-    color: floralwhite;
-}
 .project-thumbnail {
     border-radius: 8px;
     width: 100%;
