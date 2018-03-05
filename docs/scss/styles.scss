@@ -128,7 +128,6 @@ $secondary-blue: #2138CD;
     @include media-breakpoint-up(lg) {
         max-height: 300px;
         max-width: 400px;
-        width: auto;
     }
 
     @include media-breakpoint-only(sm) {
