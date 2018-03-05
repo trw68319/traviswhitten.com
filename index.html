@@ -13,7 +13,7 @@
     
     <body>
         <nav class="navbar fixed-top navbar-expand-lg navbar-inverse" style="background-color: #353A41">
-            <a class="navbar-brand" href="#" style="color: white">Travis Whitten</a>
+            <a class="navbar-brand mb-0 h1" style="color: white">Travis Whitten</a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
             </button>
@@ -36,34 +36,39 @@
         </div>
         -->
         
-        <div id="home" class="container-fluid">
+        <div id="home" class="container-fluid" style="background-color: darkslategray">
             
-            <div class="sectionTitle">
-                <h1 class="display-4">Home</h1>
+            <div class="container-fluid sectionTitle">
+                <h1 class="section-title display-4">Home</h1>
             </div>
             
-            <div class="rotatingWords">
+            <div class="row text-center col-sm-12" id="rotatingWords">
                 <h1 class="display-1">Hard Working.</h1>
             </div>
             
-            <div id="homeBottom">
-                <h1>
-                    Get to Know Me.
-                </h1>
-                <h1>
-                    What I've Done.
-                </h1>
-                <h1>
-                    What I'm Doing.
-                </h1>
+            <div id="homeBottom" class="container-fluid">
+                <div class="row">
+                    <div class="col-sm-12 col-md-4 text-right">
+                        <h1>
+                            Get to Know Me.
+                        </h1>
+                    </div>
+                    <div class="col-sm-12 col-md-4 text-center">
+                        <h1>
+                            What I've Done.
+                        </h1>
+                    </div>
+                    <div class="col-sm-12 col-md-4 text-left">
+                        <h1>
+                            What I'm Doing.
+                        </h1>
+                    </div>
+                </div>
             </div>
         </div>
         
         <div id="projects" class="container-fluid">      
-            <div class="sectionTitle">
-                <h1 class="display-4">Projects</h1>
-            </div>
-            
+            <h1 class="section-title display-4">Projects</h1>
             <div id="project1" class="projectContainer">
                 <img class="projectThumbnail" src="HTC_Vive.jpg">
                 <div class="projectDescription">
@@ -113,6 +118,7 @@
             </div>            
         </div>
         
+        <!--
         <div id="aboutMe" class="container-fluid">
             
             <div class="sectionTitle">
@@ -128,9 +134,9 @@
                 <h1 class="display-4">Contact Me</h1>
             </div>
         </div>
+        -->
+        <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
     </body>
-    
-    <footer>
-    
-    </footer>
 </html>
