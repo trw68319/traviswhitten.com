@@ -6026,73 +6026,73 @@ a.text-dark:hover, a.text-dark:focus {
   .table-bordered td {
     border: 1px solid #ddd !important; } }
 
-html, body {
-  width: 100%;
-  height: 100%;
-  margin: 0px;
-  padding: 0px;
-  overflow-x: hidden; }
+html {
+  padding-top: 55px; }
 
 @media (max-width: 767.98px) {
   .display-1 {
     font-size: 4em; } }
 
-.navbar {
-  background-color: #1D2731;
-  color: floralwhite; }
+.center-block {
+  display: block;
+  margin-left: auto;
+  margin-right: auto; }
 
 .navbar {
-  background-color: #353A41;
-  color: black; }
+  height: 55px;
+  background-color: #1D2731;
+  color: floralwhite; }
   .navbar a {
     color: #909090; }
   .navbar a:hover {
     color: floralwhite; }
 
-@media (max-width: 767.98px) {
-  .section-title {
-    font-size: 2em; } }
+.section-title {
+  height: 14%; }
+  @media (max-width: 767.98px) {
+    .section-title h1 {
+      font-size: 2em; } }
+  @media (min-width: 992px) {
+    .section-title h1 {
+      font-size: 2.5em; } }
 
 #home {
+  height: 70vh;
   background-color: #0B3C5D;
-  position: relative;
-  color: floralwhite;
-  top: 32px;
-  height: 550px; }
+  color: floralwhite; }
   @media (min-width: 576px) and (max-width: 767.98px) {
     #home {
-      height: 300px; } }
-
-#homeBottom {
-  position: absolute;
-  bottom: 10%; }
-  @media (max-width: 767.98px) {
-    #homeBottom h1 {
-      font-size: 1.2em; } }
-  @media (min-width: 768px) and (max-width: 991.98px) {
-    #homeBottom h1 {
-      font-size: 1.8em; } }
-  @media (min-width: 992px) {
-    #homeBottom h1 {
-      font-size: 2.2em; } }
-
-#rotatingWords {
-  position: absolute;
-  bottom: 40%; }
+      height: 65vh; } }
+  @media (min-width: 768px) {
+    #home {
+      height: 55vh; } }
+  #home #rotatingWords {
+    height: 60%; }
+  #home #homeBottom {
+    height: 26%; }
+    @media (max-width: 767.98px) {
+      #home #homeBottom h1 {
+        font-size: 1.2em; } }
+    @media (min-width: 768px) and (max-width: 991.98px) {
+      #home #homeBottom h1 {
+        font-size: 1.8em; } }
+    @media (min-width: 992px) {
+      #home #homeBottom h1 {
+        font-size: 2em; } }
 
 #projects {
-  position: relative;
-  top: 32px; }
-
-.project-description h2 {
-  color: #2138CD; }
-  @media (max-width: 767.98px) {
-    .project-description h2 {
-      font-size: 1.2em; } }
+  height: 70vh;
+  background-color: snow; }
 
 @media (max-width: 767.98px) {
   .project-description h1 {
-    font-size: 1.3em; } }
+    font-size: 1.45em; } }
+
+.project-description h2 {
+  color: #5E6373; }
+  @media (max-width: 767.98px) {
+    .project-description h2 {
+      font-size: 1.3em; } }
 
 @media (max-width: 767.98px) {
   .project-description .lead {
@@ -6101,10 +6101,14 @@ html, body {
 .project-description .badge-warning {
   color: floralwhite; }
 
+.project-description .btn {
+  background-color: #0B3C5D;
+  border-color: #0B3C5D; }
+
 .project-thumbnail {
   border-radius: 8px;
   width: 100%; }
-  @media (min-width: 768px) {
+  @media (min-width: 768px) and (max-width: 991.98px) {
     .project-thumbnail {
       max-height: 200px; } }
   @media (min-width: 992px) {
