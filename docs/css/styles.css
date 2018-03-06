@@ -6033,10 +6033,6 @@ html, body {
   padding: 0px;
   overflow-x: hidden; }
 
-.btn-primary {
-  background-color: #2138cd;
-  border-color: #2138cd; }
-
 @media (max-width: 767.98px) {
   .display-1 {
     font-size: 4em; } }
@@ -6045,11 +6041,13 @@ html, body {
   background-color: #1D2731;
   color: floralwhite; }
 
-.navbar a {
-  color: #909090; }
-
-.navbar a:hover {
-  color: floralwhite; }
+.navbar {
+  background-color: #353A41;
+  color: black; }
+  .navbar a {
+    color: #909090; }
+  .navbar a:hover {
+    color: floralwhite; }
 
 @media (max-width: 767.98px) {
   .section-title {
@@ -6068,18 +6066,15 @@ html, body {
 #homeBottom {
   position: absolute;
   bottom: 10%; }
-
-@media (max-width: 767.98px) {
-  #homeBottom h1 {
-    font-size: 1.2em; } }
-
-@media (min-width: 768px) and (max-width: 991.98px) {
-  #homeBottom h1 {
-    font-size: 1.8em; } }
-
-@media (min-width: 992px) {
-  #homeBottom h1 {
-    font-size: 2.2em; } }
+  @media (max-width: 767.98px) {
+    #homeBottom h1 {
+      font-size: 1.2em; } }
+  @media (min-width: 768px) and (max-width: 991.98px) {
+    #homeBottom h1 {
+      font-size: 1.8em; } }
+  @media (min-width: 992px) {
+    #homeBottom h1 {
+      font-size: 2.2em; } }
 
 #rotatingWords {
   position: absolute;
@@ -6090,7 +6085,7 @@ html, body {
   top: 32px; }
 
 .project-description h2 {
-  color: #2138cd; }
+  color: #2138CD; }
   @media (max-width: 767.98px) {
     .project-description h2 {
       font-size: 1.2em; } }
@@ -6111,11 +6106,11 @@ html, body {
   width: 100%; }
   @media (min-width: 768px) {
     .project-thumbnail {
-      height: auto;
-      max-width: 400px; } }
+      max-height: 200px; } }
   @media (min-width: 992px) {
     .project-thumbnail {
-      max-width: 600px; } }
+      max-height: 300px;
+      max-width: 400px; } }
   @media (min-width: 576px) and (max-width: 767.98px) {
     .project-thumbnail {
       max-height: 260px;

@@ -1,6 +1,12 @@
+
+//Bootstrap Sass Files
+@import "node_modules/bootstrap/scss/bootstrap";
+
 $prussian-blue: #0B3C5D;
 $gold-leaf: #D9B310;
 $ivory-black: #1D2731;
+$white-text: floralwhite;
+$gray-text: #909090;
 
 // Responsive design changes
 html, body {
@@ -20,25 +26,14 @@ html, body {
 // Style changes + responsive changes
 .navbar {
     background-color: $ivory-black;
-    color: floralwhite;
-}
-
-
-// Individual style/ responsive changes
-
-$primary-blue: #2471A3;
-$secondary-blue: #2138CD;
-
-.navbar {
-    background-color: #353A41;
-    color: black;
+    color: $white-text;
 
     a {
-        color: #909090;
+        color: $gray-text;
     }
     
     a:hover {
-        color: floralwhite;
+        color: $white-text;
     }
 }
 
@@ -51,7 +46,7 @@ $secondary-blue: #2138CD;
 #home {
     background-color: $prussian-blue;
     position: relative;
-    color: floralwhite;
+    color: $white-text;
     top: 32px;
     height: 550px;
 
@@ -112,7 +107,7 @@ $secondary-blue: #2138CD;
     }
     
     .badge-warning {
-        color: floralwhite;
+        color: $white-text;
     }
 }
 
@@ -135,6 +130,3 @@ $secondary-blue: #2138CD;
         width: auto;
     }
 }
-
-//Bootstrap Sass Files
-@import "node_modules/bootstrap/scss/bootstrap";
