@@ -1,7 +1,9 @@
-// Variable Overrides
-
 //Bootstrap Sass Files
 @import "node_modules/bootstrap/scss/bootstrap";
+
+$prussian-blue: #0B3C5D;
+$gold-leaf: #D9B310;
+$ivory-black: #1D2731;
 
 // Responsive design changes
 html, body {
@@ -25,7 +27,7 @@ html, body {
 
 // Style changes + responsive changes
 .navbar {
-    background-color: #353A41;
+    background-color: $ivory-black;
     color: floralwhite;
 }
 
@@ -44,7 +46,7 @@ html, body {
 }
 
 #home {
-    background-color: #8085a7;
+    background-color: $prussian-blue;
     position: relative;
     color: floralwhite;
     top: 32px;
