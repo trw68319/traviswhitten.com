@@ -14,15 +14,16 @@
     
     <body>
         <div class="container-fluid">
-            <nav class="navbar navbar-inverse bg-inverse fixed-top navbar-expand-lg">
+            <nav class="navbar navbar-dark bg-dark fixed-top navbar-expand-lg">
                 <a class="navbar-brand mb-0 h1">Travis Whitten</a>
-                <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
                 </button>
                 <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
                     <div class="navbar-nav">
                     <a class="nav-item nav-link" href="#home">Home <span class="sr-only">(current)</span></a>
                     <a class="nav-item nav-link" href="#projects">Projects</a>
+                    <a class="nav-item nav-link" href="#experience">Experience</a>
                     <a class="nav-item nav-link" href="#aboutMe">About Me</a>
                     <a class="nav-item nav-link" href="#contactMe">Contact Me</a>
                     </div>
@@ -32,7 +33,7 @@
         
         <div id="home" class="container-fluid">
             <div class="section-title row d-flex align-items-end justify-content-start">
-                <div class="col-12 col-md-4 text-left text-md-center pl-4 pl-md-0">
+                <div class="col-12 col-md-4 text-left text-md-center pl-4 pl-md-0 pt-3 pt-md-4">
                     <h1 class="display-4">Home</h1>
                 </div>
             </div>
@@ -43,7 +44,7 @@
                 </div>
             </div>
             
-            <div id="homeBottom" class="row d-flex align-items-center justify-content-center">
+            <div id="homeBottom" class="row d-flex align-items-center justify-content-center justify-content-xl-around pb-3">
                 <div class="col-12 col-sm-4">
                     <h1 class="text-center">Get to Know Me.</h1>
                 </div>
@@ -58,17 +59,17 @@
 
         <div id="projects" class="container-fluid">   
             <div class="section-title row d-flex align-items-end justify-content-start">
-                <div class="col-12 col-md-4 text-left text-md-center pl-4 pl-md-0">
+                <div class="col-12 col-md-4 text-left text-md-center pl-4 pl-md-0 pt-3 pt-md-4 pb-5">
                     <h1 class="display-4">Projects</h1>
                 </div>
             </div>
 
             <div id="project1" class="project-container container-fluid">
-                <div class="row justify-content-center">
-                    <div class="col-12 col-md-auto d-flex align-items-center">
-                        <img class="project-thumbnail float-center float-md-left d-block mt-5 mb-3 mx-4-lg" src="assets/HTC_Vive.jpg">
+                <div class="row mb-5">
+                    <div class="col-12 col-xl-4 d-flex justify-content-center align-items-center mb-3 mb-xl-0">
+                        <img class="project-thumbnail float-center float-xl-left" src="assets/HTC_Vive.jpg">
                     </div>
-                    <div class="project-description col-12 col-md-8 text-center text-xl-left">
+                    <div class="project-description col-12 col-xl-8 float-xl-left text-center text-xl-left">
                         <h1>
                             Gulfstream Virtual Reality Experience with Eye-Tracking
                         </h1>
@@ -78,67 +79,74 @@
                         <p class="py-2">
                             <span class="lead">A virtual reality experience within Unity3D.</span> Implements emerging technology -- eye tracking within a head-mounted display -- in a virtual cockpit environment. Using Pupil Labs HTC Vive Eye Tracker, a visualization of the user's gaze over a period of time can be created using 3D heatmaps.
                         </p>
-                        <a class="btn btn-primary mb-5 ml-xl-5" href="#" role="button">Detailed Information</a>
+                        <a class="btn btn-primary ml-xl-5" href="gulfstream-vr-project.html" role="button">Detailed Information</a>
                     </div>
                 </div>
             </div>
             
-            <div id="project2" class="project-container row justify-content-center">
-                <div class="col-12 col-md-auto d-flex align-items-center">
-                    <img class="project-thumbnail float-center float-md-left d-block mb-3 mx-4-lg" src="assets/Arduino_Counter.jpg">
-                </div>
-                <div class="project-description col-12 col-md-8 text-center">
-                    <h1>
-                        Arduino - Light Sensitive Display with Dial Control
-                    </h1>
-                    <h2>
-                        Independent Microcontroller Project
-                    </h2>
-                    <p class="py-2">
-                        STUFF.
-                    </p>
-                    <a class="btn btn-primary mb-5" href="#" role="button">Detailed Information</a>
+            <div id="project2" class="project-container container-fluid">
+                <div class="row mb-5">
+                    <div class="col-12 col-xl-4 d-flex justify-content-center align-items-center mb-3 mb-xl-0">
+                        <img class="project-thumbnail float-center float-xl-left" src="assets/Arduino_Counter.jpg">
+                    </div>
+                    <div class="project-description col-12 col-xl-8 float-xl-left text-center text-xl-left">
+                        <h1>
+                            Arduino - Light Sensitive Display with Dial Control <span class="badge badge-warning ml-2">Coming Soon</span>
+                        </h1>
+                        <h2 class="ml-xl-5">
+                            Independent Microcontroller Project
+                        </h2>
+                        <p class="py-2">
+                            <!--STUFF.-->
+                        </p>
+                        <a class="btn btn-primary ml-xl-5" href="#" role="button">Detailed Information</a>
+                    </div>
                 </div>
             </div>
         
-            <div id="project3" class="project-container row justify-content-center">
-                <div class="col-12 col-md-auto d-flex align-items-center">
-                    <img class="project-thumbnail float-center float-md-left d-block mb-3 mx-4-lg" src="assets/Cone.jpg">
-                </div>
-                <div class="project-description col-12 col-md-8 text-center">
-                    <h1>
-                        Arduino - RFID Door Lock <span class="badge badge-warning ml-2">Work in Progress</span>
-                    </h1>
-                    <h2>
-                        Independent Microcontroller Project
-                    </h2>
-                    <p class="py-2">
-                        STUFF.
-                    </p>
-                    <a class="btn btn-primary" href="#" role="button">Detailed Information</a>
+            <div id="project3" class="project-container container-fluid">
+                <div class="row mb-5">
+                    <div class="col-12 col-xl-4 d-flex justify-content-center align-items-center mb-3 mb-xl-0">
+                        <img class="project-thumbnail float-center float-xl-left" src="assets/Cone.jpg">
+                    </div>
+                    <div class="project-description col-12 col-xl-8 float-xl-left text-center text-xl-left">
+                        <h1>
+                            Arduino - RFID Door Lock <span class="badge badge-warning ml-2">Coming Soon</span>
+                        </h1>
+                        <h2 class="ml-xl-5">
+                            Independent Microcontroller Project
+                        </h2>
+                        <p class="py-2">
+                            <!--STUFF.-->
+                        </p>
+                        <a class="btn btn-primary ml-xl-5" href="#" role="button">Detailed Information</a>
+                    </div>
                 </div>
             </div>            
         </div>
 
-        <!--
-        <div id="aboutMe" class="container-fluid">
-            
-            <div class="sectionTitle">
-                <h1 class="display-4">About Me</h1>
+        <div id="aboutMe" class="project-container container-fluid">
+            <div class="section-title row d-flex align-items-end justify-content-start">
+                <div class="col-12 col-md-4 text-left text-md-center pl-4 pl-md-0 pt-3 pt-md-4 pb-5">
+                    <h1 class="display-4">About Me</h1>
+                </div>
             </div>
-            
-            <img id="myPicture" src="Me.jpg">
-            
         </div>
         
-        <div id="contactMe" class="container-fluid">
-            <div class="sectionTitle">
-                <h1 class="display-4">Contact Me</h1>
+        <div id="contactMe" class="project-container container-fluid">
+            <div class="section-title row d-flex align-items-end justify-content-start">
+                <div class="col-12 col-md-4 text-left text-md-center pl-4 pl-md-0 pt-3 pt-md-4 pb-5">
+                    <h1 class="display-4">Contact Me</h1>
+                </div>
             </div>
         </div>
-        -->
+
         <script src="/js/jquery.min.js"></script>
         <script src="/js/popper.min.js"></script>
         <script src="/js/bootstrap.min.js"></script>
     </body>
+
+    <footer>
+
+    </footer>
 </html>

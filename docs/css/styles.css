@@ -6027,7 +6027,16 @@ a.text-dark:hover, a.text-dark:focus {
     border: 1px solid #ddd !important; } }
 
 html {
-  padding-top: 55px; }
+  background-color: #5E6373; }
+
+body {
+  max-width: 2160px;
+  margin: auto;
+  padding-top: 56px; }
+
+nav {
+  max-width: 2160px;
+  margin: auto; }
 
 @media (max-width: 767.98px) {
   .display-1 {
@@ -6039,8 +6048,7 @@ html {
   margin-right: auto; }
 
 .navbar {
-  height: 55px;
-  background-color: #1D2731;
+  background-color: #1D2731 !important;
   color: floralwhite; }
   .navbar a {
     color: #909090; }
@@ -6048,13 +6056,16 @@ html {
     color: floralwhite; }
 
 .section-title {
-  height: 14%; }
+  height: auto; }
   @media (max-width: 767.98px) {
     .section-title h1 {
       font-size: 2em; } }
-  @media (min-width: 992px) {
+  @media (min-width: 768px) {
     .section-title h1 {
       font-size: 2.5em; } }
+  @media (min-width: 1200px) {
+    .section-title h1 {
+      font-size: 2.75em; } }
 
 #home {
   height: 70vh;
@@ -6068,6 +6079,12 @@ html {
       height: 55vh; } }
   #home #rotatingWords {
     height: 60%; }
+    @media (min-width: 768px) {
+      #home #rotatingWords h1 {
+        font-size: 5.5em; } }
+    @media (min-width: 1200px) {
+      #home #rotatingWords h1 {
+        font-size: 7em; } }
   #home #homeBottom {
     height: 26%; }
     @media (max-width: 767.98px) {
@@ -6075,31 +6092,46 @@ html {
         font-size: 1.2em; } }
     @media (min-width: 768px) and (max-width: 991.98px) {
       #home #homeBottom h1 {
-        font-size: 1.8em; } }
+        font-size: 1.6em; } }
     @media (min-width: 992px) {
       #home #homeBottom h1 {
-        font-size: 2em; } }
+        font-size: 1.9em; } }
 
 #projects {
-  height: 70vh;
   background-color: snow; }
 
 @media (max-width: 767.98px) {
   .project-description h1 {
     font-size: 1.45em; } }
 
+@media (min-width: 768px) and (max-width: 991.98px) {
+  .project-description h1 {
+    font-size: calc(1.45em * 1.25); } }
+
+@media (min-width: 992px) and (max-width: 1199.98px) {
+  .project-description h1 {
+    font-size: calc(1.45em * 1.5); } }
+
 .project-description h2 {
   color: #5E6373; }
   @media (max-width: 767.98px) {
     .project-description h2 {
       font-size: 1.3em; } }
+  @media (min-width: 768px) and (max-width: 991.98px) {
+    .project-description h2 {
+      font-size: calc(1.3em * 1.2); } }
+  @media (min-width: 992px) and (max-width: 1199.98px) {
+    .project-description h2 {
+      font-size: calc(1.3em * 1.45); } }
 
 @media (max-width: 767.98px) {
   .project-description .lead {
     font-size: 1.2em; } }
 
 .project-description .badge-warning {
-  color: floralwhite; }
+  padding: 0.15em 0.4em 0.20em 0.4em;
+  color: floralwhite;
+  font-weight: 300; }
 
 .project-description .btn {
   background-color: #0B3C5D;
@@ -6107,16 +6139,31 @@ html {
 
 .project-thumbnail {
   border-radius: 8px;
-  width: 100%; }
-  @media (min-width: 768px) and (max-width: 991.98px) {
+  max-height: 45vh; }
+  @media (min-width: 1200px) {
     .project-thumbnail {
-      max-height: 200px; } }
-  @media (min-width: 992px) {
-    .project-thumbnail {
-      max-height: 300px;
-      max-width: 400px; } }
-  @media (min-width: 576px) and (max-width: 767.98px) {
-    .project-thumbnail {
-      max-height: 260px;
-      margin: auto;
-      width: auto; } }
+      max-height: 400px; } }
+
+#aboutMe {
+  background-color: #0B3C5D;
+  color: floralwhite; }
+
+#contactMe {
+  background-color: snow; }
+
+#gulfstreamComingSoon {
+  height: calc(100vh - 56px);
+  background-color: #0B3C5D;
+  color: floralwhite; }
+  #gulfstreamComingSoon #comingSoon {
+    height: 100%; }
+    @media (min-width: 768px) {
+      #gulfstreamComingSoon #comingSoon h1 {
+        font-size: 5.5em; } }
+    @media (min-width: 1200px) {
+      #gulfstreamComingSoon #comingSoon h1 {
+        font-size: 7em; } }
+    #gulfstreamComingSoon #comingSoon .btn {
+      background-color: snow;
+      border-color: snow;
+      color: #0B3C5D; }

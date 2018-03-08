@@ -8,9 +8,23 @@ $white-text: floralwhite;
 $gray-text: #909090;
 $snow: snow;
 
+$project-heading-size: 1.45em;
+$project-subheading-size: 1.3em;
+
 // Responsive design changes
 html {
-    padding-top: 55px;
+    background-color: $accent-blue;
+}
+
+body {
+    max-width: 2160px;
+    margin: auto;
+    padding-top: 56px;
+}
+
+nav {
+    max-width: 2160px;
+    margin: auto;
 }
 
 .display-1 {
@@ -24,10 +38,10 @@ html {
     margin-left: auto;
     margin-right: auto;
 }
+
 // Style changes + responsive changes
 .navbar {
-    height: 55px;
-    background-color: $ivory-black;
+    background-color: $ivory-black !important;
     color: $white-text;
 
     a {
@@ -40,15 +54,19 @@ html {
 }
 
 .section-title {
-    height: 14%;
+    height: auto;
 
     h1 {
         @include media-breakpoint-down(sm) {
             font-size: 2em;
         }
 
-        @include media-breakpoint-up(lg) {
+        @include media-breakpoint-up(md) {
             font-size: 2.5em;
+        }
+
+        @include media-breakpoint-up(xl) {
+            font-size: 2.75em;
         }
     }
 }
@@ -68,6 +86,16 @@ html {
 
     #rotatingWords {
         height: 60%;
+
+        h1 {
+            @include media-breakpoint-up(md) {
+                font-size: 5.5em;
+            }
+
+            @include media-breakpoint-only(xl) {
+                font-size: 7em;
+            }
+        }   
     }
 
     #homeBottom {
@@ -79,11 +107,11 @@ html {
             }
     
             @include media-breakpoint-only(md) {
-                font-size: 1.8em;
+                font-size: 1.6em;
             }
     
             @include media-breakpoint-up(lg) {
-                font-size: 2em;
+                font-size: 1.9em;
             }
         }
     }
@@ -91,7 +119,6 @@ html {
 }
 
 #projects {
-    height: 70vh;
     background-color: $snow;
 }
 
@@ -99,15 +126,31 @@ html {
     
     h1 {
         @include media-breakpoint-down(sm) {
-            font-size: 1.45em;
+            font-size: $project-heading-size;
+        }
+        
+        @include media-breakpoint-only(md) {
+            font-size: calc(#{$project-heading-size} * 1.25);
+        }
+
+        @include media-breakpoint-only(lg) {
+            font-size: calc(#{$project-heading-size} * 1.5);
         }
     }
 
     h2 {
         color: $accent-blue;
 
-        @include media-breakpoint-down (sm) {
-            font-size: 1.3em;
+        @include media-breakpoint-down(sm) {
+            font-size: $project-subheading-size;
+        }
+
+        @include media-breakpoint-only(md) {
+            font-size: calc(#{$project-subheading-size} * 1.2);
+        }
+
+        @include media-breakpoint-only(lg) {
+            font-size: calc(#{$project-subheading-size} * 1.45);
         }
     }
     
@@ -118,7 +161,9 @@ html {
     }
     
     .badge-warning {
+        padding: 0.15em 0.4em 0.20em 0.4em;
         color: $white-text;
+        font-weight: 300;
     }
 
     .btn {
@@ -129,20 +174,47 @@ html {
 
 .project-thumbnail {
     border-radius: 8px;
-    width: 100%;
+    max-height: 45vh;
 
-    @include media-breakpoint-only(md) {
-        max-height: 200px;
+    @include media-breakpoint-only(xl) {
+        max-height: 400px;
     }
 
-    @include media-breakpoint-up(lg) {
-        max-height: 300px;
-        max-width: 400px;
-    }
+}
 
-    @include media-breakpoint-only(sm) {
-        max-height: 260px;
-        margin: auto;
-        width: auto;
+#aboutMe {
+    background-color: $prussian-blue;
+    color: $white-text;
+}
+
+#contactMe {
+    background-color: $snow;
+}
+
+// Gulfstream Project 
+
+#gulfstreamComingSoon {
+    height: calc(100vh - 56px);
+    background-color: $prussian-blue;
+    color: $white-text;
+
+    #comingSoon {
+        height: 100%;
+
+        h1 {
+            @include media-breakpoint-up(md) {
+                font-size: 5.5em;
+            }
+
+            @include media-breakpoint-only(xl) {
+                font-size: 7em;
+            }
+        }
+
+        .btn {
+            background-color: $snow;
+            border-color: $snow;
+            color: $prussian-blue;
+        }
     }
 }
