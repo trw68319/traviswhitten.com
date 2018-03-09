@@ -6069,7 +6069,7 @@ nav {
 
 .section-underline {
   height: 1px;
-  width: 45%;
+  width: 55%;
   background: linear-gradient(to right, transparent, black, transparent); }
   @media (min-width: 576px) and (max-width: 767.98px) {
     .section-underline {
@@ -6079,34 +6079,69 @@ nav {
       width: 32%; } }
 
 #home {
-  height: 70vh;
+  height: auto;
   background-color: #0B3C5D;
-  color: floralwhite; }
-  @media (min-width: 576px) and (max-width: 767.98px) {
-    #home {
-      height: 65vh; } }
-  @media (min-width: 768px) {
-    #home {
-      height: 55vh; } }
-  #home #rotatingWords {
-    height: 60%; }
-    @media (min-width: 768px) {
-      #home #rotatingWords h1 {
-        font-size: 5.5em; } }
-    @media (min-width: 1200px) {
-      #home #rotatingWords h1 {
-        font-size: 7em; } }
-  #home #homeBottom {
-    height: 26%; }
-    @media (max-width: 767.98px) {
-      #home #homeBottom h1 {
-        font-size: 1.2em; } }
-    @media (min-width: 768px) and (max-width: 991.98px) {
-      #home #homeBottom h1 {
-        font-size: 1.6em; } }
-    @media (min-width: 992px) {
-      #home #homeBottom h1 {
-        font-size: 1.9em; } }
+  color: floralwhite;
+  /*@include media-breakpoint-only(sm) {
+        height: 65vh;
+    }
+    
+    @include media-breakpoint-up(md) {
+        height: 55vh;
+    }*/
+  /*
+    #rotatingWords {
+        height: 60%;
+
+        h1 {
+            @include media-breakpoint-up(md) {
+                font-size: 5.5em;
+            }
+
+            @include media-breakpoint-only(xl) {
+                font-size: 7em;
+            }
+        }   
+    }
+
+    #homeBottom {
+        height: 26%;
+
+        h1 {
+            @include media-breakpoint-down(sm) {
+                font-size: 1.2em;
+            }
+    
+            @include media-breakpoint-only(md) {
+                font-size: 1.6em;
+            }
+    
+            @include media-breakpoint-up(lg) {
+                font-size: 1.9em;
+            }
+        }
+    }
+    */ }
+  #home #contactInfo {
+    background-color: snow;
+    color: #1D2731 !important;
+    border-style: solid;
+    border-radius: 8px;
+    border-width: 1px;
+    border-color: snow;
+    height: 90%;
+    width: 85%;
+    font-size: .75em; }
+    #home #contactInfo img {
+      border-top-left-radius: 8px;
+      border-top-right-radius: 8px; }
+      @media (min-width: 992px) and (max-width: 1199.98px) {
+        #home #contactInfo img {
+          border-top-right-radius: 0px;
+          border-bottom-left-radius: 8px;
+          max-height: 100%; } }
+    #home #contactInfo .section-underline {
+      width: 85%; }
 
 #projects {
   background-color: snow; }
@@ -6149,34 +6184,35 @@ nav {
 
 .thumbnail {
   border-radius: 8px;
-  max-height: 45vh;
-  max-width: 550px; }
+  max-height: 45vh; }
+  @media (min-width: 992px) {
+    .thumbnail {
+      max-width: 550px; } }
   @media (min-width: 1200px) {
     .thumbnail {
       max-height: 400px; } }
 
+#experience {
+  background-color: #0B3C5D; }
+  #experience .section-underline {
+    background: linear-gradient(to right, rgba(255, 250, 240, 0), floralwhite, rgba(255, 250, 240, 0)); }
+  #experience h1 {
+    color: floralwhite; }
+  #experience h2 {
+    color: #D9B310; }
+  #experience .btn {
+    color: floralwhite;
+    background-color: #909090;
+    border-color: #909090; }
+
 #aboutMe {
-  background-color: #0B3C5D;
-  color: floralwhite; }
+  background-color: snow; }
   #aboutMe .me-thumbnail {
     border-radius: 8px;
     max-height: 35vh; }
     @media (min-width: 1200px) {
       #aboutMe .me-thumbnail {
         max-height: 275px; } }
-  #aboutMe .section-underline {
-    height: 1px;
-    width: 45%;
-    background: linear-gradient(to right, rgba(255, 250, 240, 0), floralwhite, rgba(255, 250, 240, 0)); }
-    @media (min-width: 576px) and (max-width: 767.98px) {
-      #aboutMe .section-underline {
-        width: 35%; } }
-    @media (min-width: 768px) {
-      #aboutMe .section-underline {
-        width: 32%; } }
-
-#contactMe {
-  background-color: snow; }
 
 #gulfstreamComingSoon {
   height: calc(100vh - 56px);
