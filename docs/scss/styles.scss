@@ -71,6 +71,20 @@ nav {
     }
 }
 
+.section-underline {
+    height: 1px;
+    width: 45%;
+    background: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 1), rgba(0, 0, 0, 0));
+
+    @include media-breakpoint-only(sm) {
+        width: 35%;
+    }
+
+    @include media-breakpoint-up(md) {
+        width: 32%;
+    }
+}
+
 #home {
     height: 70vh;
     background-color: $prussian-blue;
@@ -122,8 +136,8 @@ nav {
     background-color: $snow;
 }
 
-.project-description {
-    
+.description {
+        
     h1 {
         @include media-breakpoint-down(sm) {
             font-size: $project-heading-size;
@@ -171,19 +185,42 @@ nav {
     }
 }
 
-.project-thumbnail {
+.thumbnail {
     border-radius: 8px;
     max-height: 45vh;
+    max-width: 550px;
 
     @include media-breakpoint-only(xl) {
         max-height: 400px;
     }
-
 }
 
 #aboutMe {
     background-color: $prussian-blue;
     color: $white-text;
+
+    .me-thumbnail {
+        border-radius: 8px;
+        max-height: 35vh;
+
+        @include media-breakpoint-only(xl) {
+            max-height: 275px;
+        }
+    }
+
+    .section-underline {
+        height: 1px;
+        width: 45%;
+        background: linear-gradient(to right, rgba(255, 250, 240, 0), rgba(255, 250, 240, 1), rgba(255, 250, 240, 0));
+
+        @include media-breakpoint-only(sm) {
+            width: 35%;
+        }
+    
+        @include media-breakpoint-up(md) {
+            width: 32%;
+        }
+    }
 }
 
 #contactMe {
