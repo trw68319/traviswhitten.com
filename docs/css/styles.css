@@ -6092,12 +6092,13 @@ nav {
   #home #contactInfo {
     background-color: snow;
     color: #1D2731 !important;
-    border-style: solid;
-    border-radius: 8px;
-    border-width: 1px;
-    border-color: snow;
+    box-shadow: 0 4px 8px 0 rgba(41, 41, 41, 0.5), 0 6px 20px 0 rgba(41, 41, 41, 0.4);
+    z-index: 1;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
     height: 90%;
-    width: 90%; }
+    width: 90%;
+    max-width: 1200px; }
     #home #contactInfo p {
       font-size: .75em; }
       @media (min-width: 576px) and (max-width: 767.98px) {
@@ -6124,7 +6125,7 @@ nav {
       @media (min-width: 576px) {
         #home #contactInfo img {
           border-top-right-radius: 0px;
-          border-bottom-left-radius: 8px;
+          border-bottom-left-radius: 0px;
           height: 100%;
           max-height: 75vh; } }
       @media (min-width: 1200px) {
@@ -6133,25 +6134,11 @@ nav {
     #home #contactInfo .section-underline {
       width: 85%; }
 
-/*
-    #rotatingWords {
-        height: 60%;
-
-        h1 {
-            @include media-breakpoint-up(md) {
-                font-size: 5.5em;
-            }
-
-            @include media-breakpoint-only(xl) {
-                font-size: 7em;
-            }
-        }   
-    }
-    */
 #homeBottom {
-  color: floralwhite;
-  height: auto;
-  background-color: #0B3C5D; }
+  min-height: calc(6vh + 20px);
+  max-height: 80px;
+  height: 8.5vh;
+  background-color: snow; }
   @media (max-width: 767.98px) {
     #homeBottom h1 {
       font-size: 1.2em; } }
@@ -6163,6 +6150,16 @@ nav {
     #homeBottom h1 {
       font-size: 1.9em;
       font-weight: 300; } }
+  #homeBottom #bar {
+    background-color: #1D2731 !important;
+    z-index: 2;
+    width: 90%;
+    max-height: 65px;
+    height: 6vh;
+    max-width: 1200px;
+    border-bottom-left-radius: 8px;
+    border-bottom-right-radius: 8px;
+    box-shadow: 0 4px 8px 0 rgba(41, 41, 41, 0.5), 0 6px 14px 0 rgba(41, 41, 41, 0.4); }
 
 #projects {
   background-color: snow; }
@@ -6205,7 +6202,8 @@ nav {
 
 .thumbnail {
   border-radius: 8px;
-  max-height: 45vh; }
+  max-height: 45vh;
+  box-shadow: 0 4px 8px 0 rgba(41, 41, 41, 0.2), 0 6px 20px 0 rgba(41, 41, 41, 0.15); }
   @media (min-width: 992px) {
     .thumbnail {
       max-width: 550px; } }
