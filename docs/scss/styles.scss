@@ -204,7 +204,26 @@ nav {
 
 
 #projects {
-    background-color: $snow;
+        background-color: $prussian-blue;
+
+    .section-underline {
+        background: linear-gradient(to right, rgba(255, 250, 240, 0), rgba(255, 250, 240, 1), rgba(255, 250, 240, 0));
+    }
+
+    h1 { 
+        color: $white-text;
+    }
+
+    h2 {
+        color: $gold-leaf;
+    }
+
+    .btn {
+        color: $white-text;
+        background-color: $gray-text;
+        border-color: $gray-text;
+    }
+}
 }
 
 .description {
@@ -271,25 +290,7 @@ nav {
 }
 
 #experience {
-    background-color: $prussian-blue;
-
-    .section-underline {
-        background: linear-gradient(to right, rgba(255, 250, 240, 0), rgba(255, 250, 240, 1), rgba(255, 250, 240, 0));
-    }
-
-    h1 { 
-        color: $white-text;
-    }
-
-    h2 {
-        color: $gold-leaf;
-    }
-
-    .btn {
-        color: $white-text;
-        background-color: $gray-text;
-        border-color: $gray-text;
-    }
+    background-color: $snow;
 }
 
 #aboutMe {
