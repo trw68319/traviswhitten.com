@@ -1,5 +1,342 @@
----
----
-
 //Bootstrap Sass Files
 @import "node_modules/bootstrap/scss/bootstrap";
+
+$prussian-blue: #0B3C5D;
+$accent-blue: #5E6373;
+$ivory-black: #1D2731;
+$white-text: floralwhite;
+$gray-text: #909090;
+$gray-bg: #dadada;
+$snow: snow;
+$gold-leaf: #D9B310;
+
+$project-heading-size: 1.45em;
+$project-subheading-size: 1.3em;
+
+// Responsive design changes
+html {
+    background-color: $accent-blue;
+}
+
+body {
+    max-width: 2160px;
+    margin: auto;
+    padding-top: 56px;
+}
+
+nav {
+    max-width: 2160px;
+    margin: auto;
+}
+
+.display-1 {
+    @include media-breakpoint-down(sm) {
+        font-size: 4em;
+    }
+}
+
+.center-block {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+// Style changes + responsive changes
+.navbar {
+    background-color: $ivory-black !important;
+    color: $white-text;
+
+    a {
+        color: $gray-text;
+    }
+    
+    a:hover {
+        color: $white-text;
+    }
+}
+
+.section-title {
+    height: auto;
+
+    h1 {
+        @include media-breakpoint-down(sm) {
+            font-size: 2em;
+        }
+
+        @include media-breakpoint-up(md) {
+            font-size: 2.5em;
+        }
+
+        @include media-breakpoint-up(xl) {
+            font-size: 2.75em;
+        }
+    }
+}
+
+.section-underline {
+    height: 1px;
+    width: 55%;
+    background: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 1), rgba(0, 0, 0, 0));
+
+    @include media-breakpoint-only(sm) {
+        width: 35%;
+    }
+
+    @include media-breakpoint-up(md) {
+        width: 25%;
+    }
+}
+
+#home {
+    height: auto;
+    background-color: $prussian-blue;
+    color: $white-text;
+
+    /*@include media-breakpoint-only(sm) {
+        height: 65vh;
+    }
+    
+    @include media-breakpoint-up(md) {
+        height: 55vh;
+    }*/
+
+    #contactInfo {
+        background-color: $snow;
+        color: $ivory-black !important;
+        box-shadow: 0 4px 8px 0 rgba(41, 41, 41, 0.5), 0 6px 20px 0 rgba(41, 41, 41, 0.4);
+        z-index: 1;
+        border-top-left-radius: 8px;
+        border-top-right-radius: 8px;
+        height: 90%;
+        width: 90%;
+        max-width: 1200px;
+
+        p {
+            font-size: .75em;
+
+            @include media-breakpoint-only(sm) {
+                font-size: .80em;
+            }
+
+            @include media-breakpoint-only(md) {
+                font-size: 1em;
+            }
+
+            @include media-breakpoint-up(lg) {
+                font-size: 1.25em;
+            }
+
+            .display-4 {
+                font-size: 1.4em;
+
+                @include media-breakpoint-only(md) {
+                    font-size: 1.2em;
+                }
+    
+                @include media-breakpoint-up(lg) {
+                    font-size: 1.25em;
+                }
+            }
+        }
+
+        img {
+            border-top-left-radius: 8px;
+            border-top-right-radius: 8px;
+            max-height: 50vh;
+
+            @include media-breakpoint-up(sm) {
+                //@include invisible(hidden);
+                border-top-right-radius: 0px;
+                border-bottom-left-radius: 0px;
+                height: 100%;
+                max-height: 75vh;
+            }
+
+            @include media-breakpoint-only(xl) {
+                max-height: 450px;
+            }
+        }
+
+        .section-underline {
+            width: 85%;
+
+            @include media-breakpoint-up(sm) {
+                
+            }
+        }
+    }
+}
+
+#homeBottom {
+    min-height: calc(6vh + 20px);
+    max-height: 80px;
+    height: 8.5vh;
+    background-color: $snow;
+
+    h1 {
+        @include media-breakpoint-down(sm) {
+            font-size: 1.2em;
+        }
+
+        @include media-breakpoint-only(md) {
+            font-size: 1.6em;
+            font-weight: 300;
+        }
+
+        @include media-breakpoint-up(lg) {
+            font-size: 1.9em;
+            font-weight: 300;
+        }
+    }
+
+    #bar {
+        background-color: $ivory-black !important;
+        z-index: 2;
+        width: 90%;
+        max-height: 65px;
+        height: 6vh;
+        max-width: 1200px;
+        border-bottom-left-radius: 8px;
+        border-bottom-right-radius: 8px;
+        box-shadow: 0 4px 8px 0 rgba(41, 41, 41, 0.5), 0 6px 14px 0 rgba(41, 41, 41, 0.4);
+    }
+}
+
+
+#projects {
+    background-color: $prussian-blue;
+
+    .section-underline {
+        background: linear-gradient(to right, rgba(255, 250, 240, 0), rgba(255, 250, 240, 1), rgba(255, 250, 240, 0));
+    }
+
+    h1 { 
+        color: $white-text;
+    }
+
+    h2 {
+        color: $gold-leaf;
+    }
+
+    .btn {
+        color: $white-text;
+        background-color: $gray-text;
+        border-color: $gray-text;
+    }
+}
+
+.description {
+        
+    h1 {
+        @include media-breakpoint-down(sm) {
+            font-size: $project-heading-size;
+        }
+        
+        @include media-breakpoint-only(md) {
+            font-size: calc(#{$project-heading-size} * 1.25);
+        }
+
+        @include media-breakpoint-only(lg) {
+            font-size: calc(#{$project-heading-size} * 1.5);
+        }
+    }
+
+    h2 {
+        color: $accent-blue;
+
+        @include media-breakpoint-down(sm) {
+            font-size: $project-subheading-size;
+        }
+
+        @include media-breakpoint-only(md) {
+            font-size: calc(#{$project-subheading-size} * 1.2);
+        }
+
+        @include media-breakpoint-only(lg) {
+            font-size: calc(#{$project-subheading-size} * 1.45);
+        }
+    }
+    
+    .lead {
+        @include media-breakpoint-down(sm) {
+            font-size: 1.2em;
+        }
+    }
+    
+    .badge-warning {
+        color: $white-text;
+        font-weight: 300;
+    }
+
+    .btn {
+        background-color: $prussian-blue;
+        border-color: $prussian-blue;
+    }
+}
+
+.thumbnail {
+    border-radius: 8px;
+    max-height: 45vh;
+    box-shadow: 0 4px 8px 0 rgba(41, 41, 41, 0.2), 0 6px 20px 0 rgba(41, 41, 41, 0.15);
+
+    @include media-breakpoint-up(lg) {
+        max-width: 550px;
+    }
+
+    @include media-breakpoint-only(xl) {
+        max-height: 400px;
+    }
+}
+
+#experience {
+    background-color: $snow;
+}
+
+#aboutMe {
+    background-color: $snow;
+
+    .me-thumbnail {
+        border-radius: 8px;
+        max-height: 35vh;
+
+        @include media-breakpoint-only(xl) {
+            max-height: 275px;
+        }
+    }
+}
+
+
+// Gulfstream Project 
+
+#gulfstreamCarousel {
+    img {
+        height: 30vh;
+        max-height: 550px;
+    }
+}
+
+#gulfstreamComingSoon {
+    height: calc(100vh - 56px);
+    background-color: $prussian-blue;
+    color: $white-text;
+
+    #comingSoon {
+        height: 100%;
+
+        h1 {
+            @include media-breakpoint-up(md) {
+                font-size: 5.5em;
+            }
+
+            @include media-breakpoint-only(xl) {
+                font-size: 7em;
+            }
+        }
+
+        .btn {
+            background-color: $snow;
+            border-color: $snow;
+            color: $prussian-blue;
+        }
+    }
+}
