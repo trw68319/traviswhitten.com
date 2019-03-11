@@ -149,10 +149,14 @@ nav {
   background-color: var(--prussian-blue); }
   #experience .section-underline {
     background: linear-gradient(to right, rgba(255, 250, 240, 0), var(--white-text), rgba(255, 250, 240, 0)); }
+  #projects .display-4 {
+    color: var(--white-text); }
   #projects .description h1 {
     color: var(--white-text); }
-    #projects .description h2 {
+  #projects .description h2 {
     color: var(--gold-leaf); }
+  #projects p {
+    color: var(--white-text); }
   @media (max-width: 767.98px) {
     #projects .description h1 {
       font-size: 1.45em; } }
@@ -177,7 +181,7 @@ nav {
   #projects .description .badge-warning {
     color: var(--white-text);
     font-weight: 300; }
-  #projects .description .btn {
+  #projects .btn {
     background-color: var(--gray-tex);
     border-color: var(--gray-tex); }
   #projects .thumbnail {
