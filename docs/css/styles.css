@@ -147,25 +147,21 @@ nav {
 
 #projects {
   background-color: var(--prussian-blue); }
-
+  #experience .section-underline {
+    background: linear-gradient(to right, rgba(255, 250, 240, 0), var(--white-text), rgba(255, 250, 240, 0)); }
   #projects .description h1 {
-    color: var(--white-text);
-  }
+    color: var(--white-text); }
     #projects .description h2 {
     color: var(--gold-leaf); }
-
   @media (max-width: 767.98px) {
     #projects .description h1 {
       font-size: 1.45em; } }
-
   @media (min-width: 768px) and (max-width: 991.98px) {
     #projects .description h1 {
       font-size: calc(1.45em * 1.25); } }
-
   @media (min-width: 992px) and (max-width: 1199.98px) {
     #projects .description h1 {
       font-size: calc(1.45em * 1.5); } }
-
   @media (max-width: 767.98px) {
     #projects .description h2 {
       font-size: 1.3em; } }
@@ -175,19 +171,15 @@ nav {
   @media (min-width: 992px) and (max-width: 1199.98px) {
     #projects .description h2 {
       font-size: calc(1.3em * 1.45); } }
-
   @media (max-width: 767.98px) {
     #projects .description .lead {
       font-size: 1.2em; } }
-
   #projects .description .badge-warning {
     color: var(--white-text);
     font-weight: 300; }
-
   #projects .description .btn {
     background-color: var(--gray-tex);
     border-color: var(--gray-tex); }
-
   #projects .thumbnail {
     border-radius: 8px;
     max-height: 45vh;
@@ -201,10 +193,6 @@ nav {
 
 #experience {
   background-color: var(--snow); }
-  #experience .section-underline {
-    background: linear-gradient(to right, rgba(255, 250, 240, 0), var(--white-text), rgba(255, 250, 240, 0)); }
-  #experience h1 {
-    color: var(--white-text); }
   #experience h2 {
     color: var(--accent-blue); }
   #experience .btn {
