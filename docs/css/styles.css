@@ -147,7 +147,7 @@ nav {
 
 #projects {
   background-color: var(--prussian-blue); }
-  #experience .section-underline {
+  #projects .section-underline {
     background: linear-gradient(to right, rgba(255, 250, 240, 0), var(--white-text), rgba(255, 250, 240, 0)); }
   #projects .display-4 {
     color: var(--white-text); }
@@ -219,13 +219,13 @@ nav {
   color: var(--white-text); }
   #gulfstreamComingSoon #comingSoon {
     height: 100%; }
-    @media (min-width: 768px) {
-      #gulfstreamComingSoon #comingSoon h1 {
-        font-size: 5.5em; } }
-    @media (min-width: 1200px) {
-      #gulfstreamComingSoon #comingSoon h1 {
-        font-size: 7em; } }
-    #gulfstreamComingSoon #comingSoon .btn {
-      background-color: var(--snow);
-      border-color: var(--snow);
-      color: var(--prussian-blue); }
+  @media (min-width: 768px) {
+    #gulfstreamComingSoon #comingSoon h1 {
+      font-size: 5.5em; } }
+  @media (min-width: 1200px) {
+    #gulfstreamComingSoon #comingSoon h1 {
+      font-size: 7em; } }
+  #gulfstreamComingSoon #comingSoon .btn {
+    background-color: var(--snow);
+    border-color: var(--snow);
+    color: var(--prussian-blue); }
