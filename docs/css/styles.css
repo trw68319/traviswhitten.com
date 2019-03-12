@@ -1,4 +1,4 @@
-@import "css/bootstrap.css";
+@import "bootstrap.css";
 
 :root{
   --prussian-blue: #0B3C5D;
@@ -178,22 +178,24 @@ nav {
   @media (max-width: 767.98px) {
     #projects .description .lead {
       font-size: 1.2em; } }
-  #projects .description .badge-warning {
-    color: var(--white-text);
+  #projects .description .badge-secondary {
     font-weight: 300; }
-  #projects .btn {
+  #projects .btn-primary {
     background-color: var(--gray-tex);
     border-color: var(--gray-tex); }
   #projects .thumbnail {
     border-radius: 8px;
-    max-height: 45vh;
+    max-height: 40vh;
+    max-width: 75vw;
     box-shadow: 0 4px 8px 0 rgba(41, 41, 41, 0.2), 0 6px 20px 0 rgba(41, 41, 41, 0.15); }
-    @media (min-width: 992px) {
-      .thumbnail {
-        max-width: 550px; } }
+    @media (min-width: 0px) {
+      #projects .thumbnail {
+        max-height: 360px;
+      }
+    }
     @media (min-width: 1200px) {
-      .thumbnail {
-        max-height: 400px; } }
+      #projects .thumbnail {
+        max-height: 340px; } }
 
 #experience {
   background-color: var(--snow); }
@@ -213,19 +215,45 @@ nav {
       #aboutMe .me-thumbnail {
         max-height: 275px; } }
 
-#gulfstreamComingSoon {
-  height: calc(100vh - 56px);
-  background-color: var(--prussian-blue);
-  color: var(--white-text); }
-  #gulfstreamComingSoon #comingSoon {
-    height: 100%; }
-  @media (min-width: 768px) {
-    #gulfstreamComingSoon #comingSoon h1 {
-      font-size: 5.5em; } }
-  @media (min-width: 1200px) {
-    #gulfstreamComingSoon #comingSoon h1 {
-      font-size: 7em; } }
-  #gulfstreamComingSoon #comingSoon .btn {
-    background-color: var(--snow);
-    border-color: var(--snow);
-    color: var(--prussian-blue); }
+#gulfstream-header {
+  background-color: var(--prussian-blue); }
+  #gulfstream-header .section-underline {
+    background: linear-gradient(to right, rgba(255, 250, 240, 0), var(--white-text), rgba(255, 250, 240, 0)); }
+  #gulfstream-header .display-4 {
+    color: var(--white-text); }
+  #gulfstream-header .description h1 {
+    color: var(--white-text); }
+  #gulfstream-header .description h2 {
+    color: var(--gold-leaf); }
+  #gulfstream-header p {
+    color: var(--white-text); }
+  @media (max-width: 767.98px) {
+    #gulfstream-header .description h1 {
+      font-size: 1.45em; } }
+  @media (min-width: 768px) and (max-width: 991.98px) {
+    #gulfstream-header .description h1 {
+      font-size: calc(1.45em * 1.25); } }
+  @media (min-width: 992px) and (max-width: 1199.98px) {
+    #gulfstream-header .description h1 {
+      font-size: calc(1.45em * 1.5); } }
+  @media (max-width: 767.98px) {
+    #gulfstream-header .description h2 {
+      font-size: 1.3em; } }
+  @media (min-width: 768px) and (max-width: 991.98px) {
+    #gulfstream-header .description h2 {
+      font-size: calc(1.3em * 1.2); } }
+  @media (min-width: 992px) and (max-width: 1199.98px) {
+    #gulfstream-header .description h2 {
+      font-size: calc(1.3em * 1.45); } }
+  @media (max-width: 767.98px) {
+    #gulfstream-header .description .lead {
+      font-size: 1.2em; } }
+  #gulfstream-header .description .badge-secondary {
+    font-weight: 300; }
+  #gulfstream-header .btn-primary {
+    background-color: var(--gray-tex);
+    border-color: var(--gray-tex); }
+
+  #gulfstream-carousel img {
+    max-height: 500px;
+  }
