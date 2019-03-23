@@ -143,8 +143,10 @@ nav {
     max-width: 1200px;
     border-bottom-left-radius: 8px;
     border-bottom-right-radius: 8px;
-    box-shadow: 0 4px 8px 0 rgba(41, 41, 41, 0.5), 0 6px 14px 0 rgba(41, 41, 41, 0.4); }
-
+    box-shadow: 0 0 2px rgba(41, 41, 41, 0.5), 0 6px 14px 0 rgba(41, 41, 41, 0.4); }
+#pitch {
+  background-color: var(--snow)
+}
 #projects {
   background-color: var(--prussian-blue); }
   #projects .section-underline {
@@ -179,11 +181,8 @@ nav {
     #projects .description .lead {
       font-size: 1.2em; } }
   #projects .description .badge-warning {
-    color: var(--white-text);
+    color: var(--snow);
     font-weight: 300; }
-  #projects .btn {
-    background-color: var(--gray-tex);
-    border-color: var(--gray-tex); }
   #projects .thumbnail {
     border-radius: 8px;
     max-height: 45vh;
@@ -195,17 +194,61 @@ nav {
       .thumbnail {
         max-height: 400px; } }
 
+#gulfstreamCarousel .modal-header{
+  background-color: var(--snow);
+  width: 80vh;
+}
+  #gulfstreamCarousel .modal-body {
+    background-color: var(--snow);
+    height: 80vh;
+    width: 80vh;
+  }
+  #gulfstreamCarousel img {
+    height: 450px;
+    max-width: 775px;
+  }
+  #gulfstreamCarousel .carousel-caption {
+    text-shadow:
+		-1px -1px 0 var(--ivory-black),
+		1px -1px 0 var(--ivory-black),
+		-1px 1px 0 var(--ivory-black),
+		1px 1px 0 var(--ivory-black);
+}
+  #gulfstreamCarousel .gulfstream-detail p {
+    color: black;
+  }
+  #gulfstreamCarousel .gulfstream-detail .list-group-item {
+    background-color: var(--snow);
+  }
+
 #experience {
   background-color: var(--snow); }
   #experience h2 {
     color: var(--accent-blue); }
-  #experience .btn {
+  #experience a.btn {
     color: var(--white-text);
     background-color: var(--prussian-blue);
     border-color: var(--prussian-blue); }
+  #experience .modal-header {
+    background-color: var(--snow);
+    width: 80vw;
+  }
+  #experience .modal-body {
+    width: 80vw;
+  }
 
 #aboutMe {
-  background-color: var(--snow); }
+  background-color: var(--prussian-blue); }
+  #aboutMe .section-underline {
+    background: linear-gradient(to right, rgba(255, 250, 240, 0), var(--white-text), rgba(255, 250, 240, 0)); }
+  #aboutMe .display-4 {
+    color: var(--white-text); }
+  #aboutMe .description h1 {
+    color: var(--white-text); }
+  #aboutMe .description h2 {
+    color: var(--gold-leaf); }
+  #aboutMe p {
+    color: var(--white-text); }
   #aboutMe .me-thumbnail {
     border-radius: 8px;
     max-height: 35vh; }
