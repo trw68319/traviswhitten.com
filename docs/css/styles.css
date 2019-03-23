@@ -165,7 +165,7 @@ nav {
   @media (min-width: 768px) and (max-width: 991.98px) {
     #projects .description h1 {
       font-size: calc(1.45em * 1.25); } }
-  @media (min-width: 992px) and (max-width: 1199.98px) {
+  @media (min-width: 991.98px) and (max-width: 1199.98px) {
     #projects .description h1 {
       font-size: calc(1.45em * 1.5); } }
   @media (max-width: 767.98px) {
@@ -193,19 +193,12 @@ nav {
     @media (min-width: 1200px) {
       .thumbnail {
         max-height: 400px; } }
-
+     
 #gulfstreamCarousel .modal-header{
   background-color: var(--snow);
-  width: 80vh;
 }
   #gulfstreamCarousel .modal-body {
     background-color: var(--snow);
-    height: 80vh;
-    width: 80vh;
-  }
-  #gulfstreamCarousel img {
-    height: 450px;
-    max-width: 775px;
   }
   #gulfstreamCarousel .carousel-caption {
     text-shadow:
@@ -220,7 +213,13 @@ nav {
   #gulfstreamCarousel .gulfstream-detail .list-group-item {
     background-color: var(--snow);
   }
-
+  #gulfstreamCarousel .modal-footer {
+    background-color: var(--snow);
+  }
+  @media (max-width: 991.98px) {
+    #gulfstreamCarousel .carousel-caption {
+    visibility: hidden;
+  }}
 #experience {
   background-color: var(--snow); }
   #experience h2 {
