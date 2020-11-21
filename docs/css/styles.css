@@ -6193,6 +6193,9 @@ nav {
       #homeBottom #bar {
         max-width: 550px; } }
 
+#pitch {
+  max-width: 1700px; }
+
 #projects::before {
   display: block;
   content: " ";
