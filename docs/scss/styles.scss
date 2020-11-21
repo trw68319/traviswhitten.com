@@ -1,32 +1,33 @@
 //Bootstrap Sass Files
 @import "node_modules/bootstrap/scss/bootstrap";
 
-$prussian-blue: #0B3C5D;
-$accent-blue: #5E6373;
-$ivory-black: #1D2731;
-$white-text: floralwhite;
-$gray-text: #909090;
-$gray-bg: #dadada;
-$snow: snow;
-$gold-leaf: #D9B310;
+$indigo-dye: #0B3C5D;
+$gunmetal: #1D2731;
+$floral-white: #fffaf0;
+$gauche-gray: #909090;
+$boring-background: #f3f3f3;
+$gold-metallic: #D9B310;
 
 $project-heading-size: 1.45em;
 $project-subheading-size: 1.3em;
 
 // Responsive design changes
 html {
-    background-color: $accent-blue;
+    background-color: $boring-background;
 }
 
 body {
-    max-width: 2160px;
+    max-width: 1700px;
     margin: auto;
-    padding-top: 56px;
+    margin-top: 56px;
+    box-shadow: 0 0 15px 0 black;
 }
 
 nav {
-    max-width: 2160px;
+    max-width: 1700px;
     margin: auto;
+
+    box-shadow: 0 0 10px 0 black;
 }
 
 .display-1 {
@@ -43,15 +44,17 @@ nav {
 
 // Style changes + responsive changes
 .navbar {
-    background-color: $ivory-black !important;
-    color: $white-text;
+    background-color: $gunmetal !important;
+    color: $floral-white;
+    position: fixed;
+    height: auto;
 
     a {
-        color: $gray-text;
+        color: $gauche-gray;
     }
     
     a:hover {
-        color: $white-text;
+        color: $floral-white;
     }
 }
 
@@ -76,7 +79,6 @@ nav {
 .section-underline {
     height: 1px;
     width: 55%;
-    background: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 1), rgba(0, 0, 0, 0));
 
     @include media-breakpoint-only(sm) {
         width: 35%;
@@ -87,10 +89,70 @@ nav {
     }
 }
 
+.section-dividor {
+    height: 1px;
+    width: 90vw;
+    max-width: 1600px;
+}
+
+.light-container {
+    background-color: $boring-background;
+
+    .section-underline {
+        background: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 1), rgba(0, 0, 0, 0));
+    }
+
+    .section-dividor {
+        background: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 1), rgba(0, 0, 0, 0));
+    }
+}
+
+.dark-container {
+    background-color: $indigo-dye;
+
+    .section-title {
+        color: $floral-white;
+    }
+
+    .section-underline {
+        background: linear-gradient(to right, rgba(255, 250, 240, 0), rgba(255, 250, 240, 1), rgba(255, 250, 240, 0));
+    }
+
+    .section-dividor {
+        background: linear-gradient(to right, rgba(255, 250, 240, 0), rgba(255, 250, 240, 1), rgba(255, 250, 240, 0));
+    }
+    
+    h1 {
+        color: $floral-white;
+    }
+
+    h2 {
+        color: $gold-metallic;
+    }
+
+    p {
+        color: $floral-white;
+    }
+
+    .btn {
+        color: $floral-white;
+        background-color: $gauche-gray;
+        border-color: $gauche-gray;
+    }
+}
+
+#top-page::before {
+    display: block; 
+    content: " "; 
+    margin-top: -1vh; 
+    height: 1vh; 
+    visibility: hidden; 
+    pointer-events: none;
+}
+
 #home {
     height: auto;
-    background-color: $prussian-blue;
-    color: $white-text;
+    background-color: $indigo-dye;
 
     /*@include media-breakpoint-only(sm) {
         height: 65vh;
@@ -101,60 +163,69 @@ nav {
     }*/
 
     #contactInfo {
-        background-color: $snow;
-        color: $ivory-black !important;
-        box-shadow: 0 4px 8px 0 rgba(41, 41, 41, 0.5), 0 6px 20px 0 rgba(41, 41, 41, 0.4);
-        z-index: 1;
+        background-color: $boring-background;
         border-top-left-radius: 8px;
         border-top-right-radius: 8px;
-        height: 90%;
-        width: 90%;
         max-width: 1200px;
+        z-index: 1;
+       
+        @include media-breakpoint-down(md) {
+            max-width: 550px;
+        }
 
         p {
-            font-size: .75em;
-
-            @include media-breakpoint-only(sm) {
-                font-size: .80em;
-            }
-
-            @include media-breakpoint-only(md) {
-                font-size: 1em;
-            }
+            font-size: 1em;
 
             @include media-breakpoint-up(lg) {
-                font-size: 1.25em;
+                font-size: 1.2em;
             }
 
             .display-4 {
-                font-size: 1.4em;
-
-                @include media-breakpoint-only(md) {
-                    font-size: 1.2em;
-                }
+                font-size: 1.5em;
     
-                @include media-breakpoint-up(lg) {
-                    font-size: 1.25em;
+                @include media-breakpoint-only(lg) {
+                    font-size: 1.4em;
                 }
+
+                @include media-breakpoint-only(xl) {
+                    font-size: 1.6em;
+                }
+            }
+        }
+
+        .lead {
+            font-size: 1em;
+
+            @include media-breakpoint-up(lg) {
+                font-size: 1.2em;
             }
         }
 
         img {
             border-top-left-radius: 8px;
             border-top-right-radius: 8px;
-            max-height: 50vh;
+            max-height: 80vh;
 
-            @include media-breakpoint-up(sm) {
+            @include media-breakpoint-up(lg) {
                 //@include invisible(hidden);
                 border-top-right-radius: 0px;
                 border-bottom-left-radius: 0px;
-                height: 100%;
-                max-height: 75vh;
+                height: auto;
             }
 
             @include media-breakpoint-only(xl) {
                 max-height: 450px;
             }
+        }
+
+        .btn {
+            border-color: #4E7BD0;
+            color: #4E7BD0;
+        }
+    
+        .btn:hover {
+            background-color: #4E7BD0;
+            color: $floral-white;
         }
 
         .section-underline {
@@ -169,131 +240,171 @@ nav {
 
 #homeBottom {
     min-height: calc(6vh + 20px);
-    max-height: 80px;
-    height: 8.5vh;
-    background-color: $snow;
-
-    h1 {
-        @include media-breakpoint-down(sm) {
-            font-size: 1.2em;
-        }
-
-        @include media-breakpoint-only(md) {
-            font-size: 1.6em;
-            font-weight: 300;
-        }
-
-        @include media-breakpoint-up(lg) {
-            font-size: 1.9em;
-            font-weight: 300;
-        }
-    }
-
+    background-color: $boring-background !important;
+    
     #bar {
-        background-color: $ivory-black !important;
-        z-index: 2;
-        width: 90%;
+        background-color: $gunmetal !important;
         max-height: 65px;
         height: 6vh;
         max-width: 1200px;
         border-bottom-left-radius: 8px;
         border-bottom-right-radius: 8px;
-        box-shadow: 0 4px 8px 0 rgba(41, 41, 41, 0.5), 0 6px 14px 0 rgba(41, 41, 41, 0.4);
+        box-shadow: 0 0 10px 0px black;
+
+        @include media-breakpoint-down(md) {
+            max-width: 550px;
+        }
     }
 }
 
+#projects::before {
+    display: block; 
+    content: " "; 
+    margin-top: -1vh; 
+    height: 1vh; 
+    visibility: hidden; 
+    pointer-events: none;
+}
 
 #projects {
-    background-color: $prussian-blue;
+    .description {
+        h1 {
+            @include media-breakpoint-down(sm) {
+                font-size: $project-heading-size;
+            }
+            
+            @include media-breakpoint-only(md) {
+                font-size: calc(#{$project-heading-size} * 1.25);
+            }
 
-    .section-underline {
-        background: linear-gradient(to right, rgba(255, 250, 240, 0), rgba(255, 250, 240, 1), rgba(255, 250, 240, 0));
-    }
+            @include media-breakpoint-only(lg) {
+                font-size: calc(#{$project-heading-size} * 1.5);
+            }
+        }
 
-    h1 { 
-        color: $white-text;
-    }
+        h2 {
+            color: #4E7BD0;
 
-    h2 {
-        color: $gold-leaf;
+            @include media-breakpoint-down(sm) {
+                font-size: $project-subheading-size;
+            }
+
+            @include media-breakpoint-only(md) {
+                font-size: calc(#{$project-subheading-size} * 1.2);
+            }
+
+            @include media-breakpoint-only(lg) {
+                font-size: calc(#{$project-subheading-size} * 1.45);
+            }
+        }
+        
+        .lead {
+            @include media-breakpoint-down(sm) {
+                font-size: 1.2em;
+            }
+        }
+
+        .badge-secondary {
+            color: $floral-white;
+            font-weight: 300;
+        }
     }
 
     .btn {
-        color: $white-text;
-        background-color: $gray-text;
-        border-color: $gray-text;
+        border-color: #4E7BD0;
+        color: #4E7BD0;
+    }
+
+    .btn:hover {
+        background-color: #4E7BD0;
+        color: $floral-white;
+    }
+
+    .thumbnail {
+        border-radius: 8px;
+        max-height: 45vh;
+        box-shadow: 0 4px 8px 0 rgba(41, 41, 41, 0.2), 0 6px 20px 0 rgba(41, 41, 41, 0.15);
+
+        @include media-breakpoint-up(lg) {
+            max-width: 550px;
+        }
+
+        @include media-breakpoint-only(xl) {
+            max-height: 400px;
+        }
     }
 }
 
-.description {
+#experience::before {
+    display: block; 
+    content: " "; 
+    margin-top: -1vh; 
+    height: 1vh; 
+    visibility: hidden; 
+    pointer-events: none;
+}
+
+#experience { 
+
+    .card-body {
+
+        p{
+            color: $gunmetal;
+        }
+       
+    }
+
+    .dates {
+        width: 70vw;
+
+        @include media-breakpoint-up(xl) {
+            width: 50vw;
+            max-width: 1000px;
+        }
         
-    h1 {
-        @include media-breakpoint-down(sm) {
-            font-size: $project-heading-size;
-        }
-        
-        @include media-breakpoint-only(md) {
-            font-size: calc(#{$project-heading-size} * 1.25);
-        }
+        .display-4 {
+            font-size: 1.4em;
+            
+            @include media-breakpoint-up(lg) {
+                font-size: 1.6em;  
+            }
 
-        @include media-breakpoint-only(lg) {
-            font-size: calc(#{$project-heading-size} * 1.5);
+            .hidden-text {
+                visibility: hidden;
+            }
+        }
+                
+        .timeline {
+        border: none;
+        border-top: 7px dotted $floral-white;
         }
     }
 
-    h2 {
-        color: $accent-blue;
-
-        @include media-breakpoint-down(sm) {
-            font-size: $project-subheading-size;
-        }
-
-        @include media-breakpoint-only(md) {
-            font-size: calc(#{$project-subheading-size} * 1.2);
-        }
-
-        @include media-breakpoint-only(lg) {
-            font-size: calc(#{$project-subheading-size} * 1.45);
-        }
-    }
-    
-    .lead {
-        @include media-breakpoint-down(sm) {
-            font-size: 1.2em;
-        }
-    }
-    
-    .badge-warning {
-        color: $white-text;
-        font-weight: 300;
+    .modal-body {
+        background-color: $indigo-dye;
     }
 
-    .btn {
-        background-color: $prussian-blue;
-        border-color: $prussian-blue;
+    .modal-content {
+        border: none;
+    }
+
+    .blockquote-footer {
+        p {
+           color: #6c7a51; 
+        }
     }
 }
 
-.thumbnail {
-    border-radius: 8px;
-    max-height: 45vh;
-    box-shadow: 0 4px 8px 0 rgba(41, 41, 41, 0.2), 0 6px 20px 0 rgba(41, 41, 41, 0.15);
-
-    @include media-breakpoint-up(lg) {
-        max-width: 550px;
-    }
-
-    @include media-breakpoint-only(xl) {
-        max-height: 400px;
-    }
-}
-
-#experience {
-    background-color: $snow;
+#aboutMe::before {
+    display: block; 
+    content: " "; 
+    margin-top: -1vh; 
+    height: 1vh; 
+    visibility: hidden; 
+    pointer-events: none;
 }
 
 #aboutMe {
-    background-color: $snow;
 
     .me-thumbnail {
         border-radius: 8px;
@@ -304,7 +415,6 @@ nav {
         }
     }
 }
-
 
 // Gulfstream Project 
 
@@ -317,8 +427,8 @@ nav {
 
 #gulfstreamComingSoon {
     height: calc(100vh - 56px);
-    background-color: $prussian-blue;
-    color: $white-text;
+    background-color: $indigo-dye;
+    color: $floral-white;
 
     #comingSoon {
         height: 100%;
@@ -334,9 +444,9 @@ nav {
         }
 
         .btn {
-            background-color: $snow;
-            border-color: $snow;
-            color: $prussian-blue;
+            background-color: $boring-background;
+            border-color: $boring-background;
+            color: $indigo-dye;
         }
     }
 }
