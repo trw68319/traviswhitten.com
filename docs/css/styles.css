@@ -6267,7 +6267,7 @@ nav {
   color: #1D2731; }
 
 #experience .dates {
-  max-width: 70vw; }
+  max-width: 85vw; }
   @media (min-width: 1200px) {
     #experience .dates {
       width: 50vw;
