@@ -6267,7 +6267,7 @@ nav {
   color: #1D2731; }
 
 #experience .dates {
-  width: 70vw; }
+  max-width: 85vw; }
   @media (min-width: 1200px) {
     #experience .dates {
       width: 50vw;
@@ -6307,23 +6307,28 @@ nav {
     #aboutMe .me-thumbnail {
       max-height: 275px; } }
 
-#gulfstreamCarousel img {
-  height: 30vh;
-  max-height: 550px; }
+#gulfstreamCarousel .modal-content {
+  width: 100; }
 
-#gulfstreamComingSoon {
-  height: calc(100vh - 56px);
-  background-color: #0B3C5D;
-  color: #fffaf0; }
-  #gulfstreamComingSoon #comingSoon {
-    height: 100%; }
-    @media (min-width: 768px) {
-      #gulfstreamComingSoon #comingSoon h1 {
-        font-size: 5.5em; } }
-    @media (min-width: 1200px) {
-      #gulfstreamComingSoon #comingSoon h1 {
-        font-size: 7em; } }
-    #gulfstreamComingSoon #comingSoon .btn {
-      background-color: #f3f3f3;
-      border-color: #f3f3f3;
-      color: #0B3C5D; }
+#gulfstreamCarousel .carousel-caption {
+  border-radius: 8px;
+  background-color: rgba(29, 39, 49, 0.5); }
+  @media (max-width: 991.98px) {
+    #gulfstreamCarousel .carousel-caption {
+      visibility: hidden; } }
+
+#gulfstreamCarousel .carousel-item {
+  background-color: #DFE7F6;
+  border-radius: 5px; }
+
+#gulfstreamCarousel .modal-body img {
+  width: 100%; }
+
+#gulfstreamCarousel .btn {
+  border-color: #4E7BD0;
+  color: #4E7BD0;
+  background-color: white; }
+
+#gulfstreamCarousel .btn:hover {
+  background-color: #4E7BD0;
+  color: white; }

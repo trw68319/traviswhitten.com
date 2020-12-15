@@ -7,6 +7,7 @@ $floral-white: #fffaf0;
 $gauche-gray: #909090;
 $boring-background: #f3f3f3;
 $gold-metallic: #D9B310;
+$alice-blue: #DFE7F6;
 
 $project-heading-size: 1.45em;
 $project-subheading-size: 1.3em;
@@ -359,7 +360,7 @@ nav {
     }
 
     .dates {
-        width: 70vw;
+        max-width: 85vw;
 
         @include media-breakpoint-up(xl) {
             width: 50vw;
@@ -379,8 +380,8 @@ nav {
         }
                 
         .timeline {
-        border: none;
-        border-top: 7px dotted $floral-white;
+            border: none;
+            border-top: 7px dotted $floral-white;
         }
     }
 
@@ -423,34 +424,39 @@ nav {
 // Gulfstream Project 
 
 #gulfstreamCarousel {
-    img {
-        height: 30vh;
-        max-height: 550px;
+    
+    .modal-content {
+        width: 100;
     }
-}
 
-#gulfstreamComingSoon {
-    height: calc(100vh - 56px);
-    background-color: $indigo-dye;
-    color: $floral-white;
+    .carousel-caption {
+        border-radius: 8px;
+        background-color: rgba($gunmetal, 0.5);
 
-    #comingSoon {
-        height: 100%;
-
-        h1 {
-            @include media-breakpoint-up(md) {
-                font-size: 5.5em;
-            }
-
-            @include media-breakpoint-only(xl) {
-                font-size: 7em;
-            }
+        @include media-breakpoint-down(md) {
+            visibility: hidden;
         }
+    }
 
-        .btn {
-            background-color: $boring-background;
-            border-color: $boring-background;
-            color: $indigo-dye;
+    .carousel-item {
+        background-color: $alice-blue;
+        border-radius: 5px;
+    }
+
+    .modal-body {
+        img {
+            width: 100%;
         }
+    }
+
+    .btn {
+        border-color: #4E7BD0;
+        color: #4E7BD0;
+        background-color: white;
+    }
+
+    .btn:hover {
+        background-color: #4E7BD0;
+        color: white;
     }
 }
