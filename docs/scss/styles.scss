@@ -354,6 +354,7 @@ nav {
     .card-body {
 
         p{
+            font-size: 0.8em;
             color: $gunmetal;
         }
        
@@ -393,11 +394,6 @@ nav {
         border: none;
     }
 
-    .blockquote-footer {
-        p {
-           color: #6c7a51; 
-        }
-    }
 }
 
 #aboutMe::before {

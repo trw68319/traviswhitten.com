@@ -6264,6 +6264,7 @@ nav {
   pointer-events: none; }
 
 #experience .card-body p {
+  font-size: 0.8em;
   color: #1D2731; }
 
 #experience .dates {
@@ -6288,9 +6289,6 @@ nav {
 
 #experience .modal-content {
   border: none; }
-
-#experience .blockquote-footer p {
-  color: #6c7a51; }
 
 #aboutMe::before {
   display: block;
